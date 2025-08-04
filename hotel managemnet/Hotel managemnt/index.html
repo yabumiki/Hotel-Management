@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oceanview Resort - Luxury Beachfront Hotel</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Homepage for Users -->
+    <section class="homepage" id="homepage">
+        <header class="home-header">
+            <div class="logo">
+                <i class="fas fa-umbrella-beach"></i>
+                <h1>Haile Resort</h1>
+            </div>
+            <nav class="home-nav">
+                <ul>
+                    <li><a href="#homepage" class="active">Home</a></li>
+                    <li><a href="#rooms">Rooms</a></li>
+                    <li><a href="#amenities">Amenities</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#" id="admin-login">Admin Login</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </header>
+
+        <div class="hero">
+            <div class="hero-content">
+                <h2>Experience Luxury by the Sea</h2>
+                <p>Book your perfect beach getaway today</p>
+                <a href="#rooms" class="btn-book">Book Now</a>
+            </div>
+        </div>
+
+        <section class="quick-booking">
+            <h3>Find Your Perfect Stay</h3>
+            <form class="booking-form">
+                <div class="form-group">
+                    <label for="check-in"><i class="fas fa-calendar-day"></i> Check-in</label>
+                    <input type="date" id="check-in">
+                </div>
+                <div class="form-group">
+                    <label for="check-out"><i class="fas fa-calendar-times"></i> Check-out</label>
+                    <input type="date" id="check-out">
+                </div>
+                <div class="form-group">
+                    <label for="guests"><i class="fas fa-user-friends"></i> Guests</label>
+                    <select id="guests">
+                        <option value="1">1 Guest</option>
+                        <option value="2">2 Guests</option>
+                        <option value="3">3 Guests</option>
+                        <option value="4">4 Guests</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn-check">Check Availability</button>
+            </form>
+        </section>
+
+        <section class="room-types" id="rooms">
+            <h2>Our Room Types</h2>
+            <div class="room-cards">
+                <div class="room-card">
+                    <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Standard Room">
+                    <div class="room-info">
+                        <h3>Standard Room</h3>
+                        <p class="price">From $120/night</p>
+                        <p class="description">Comfortable room with all basic amenities</p>
+                        <a href="#" class="btn-view">View Details</a>
+                    </div>
+                </div>
+                <div class="room-card">
+                    <img src="https://images.unsplash.com/photo-1596178065887-1198b6148b2b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Deluxe Room">
+                    <div class="room-info">
+                        <h3>Deluxe Room</h3>
+                        <p class="price">From $180/night</p>
+                        <p class="description">Spacious room with premium amenities</p>
+                        <a href="#" class="btn-view">View Details</a>
+                    </div>
+                </div>
+                <div class="room-card">
+                    <img src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Ocean View Suite">
+                    <div class="room-info">
+                        <h3>Ocean View Suite</h3>
+                        <p class="price">From $250/night</p>
+                        <p class="description">Breathtaking views of the ocean</p>
+                        <a href="#" class="btn-view">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="amenities" id="amenities">
+            <h2>Our Amenities</h2>
+            <div class="amenity-grid">
+                <div class="amenity-item">
+                    <i class="fas fa-swimming-pool"></i>
+                    <h3>Infinity Pool</h3>
+                    <p>Stunning ocean-view infinity pool</p>
+                </div>
+                <div class="amenity-item">
+                    <i class="fas fa-utensils"></i>
+                    <h3>Fine Dining</h3>
+                    <p>World-class restaurants on-site</p>
+                </div>
+                <div class="amenity-item">
+                    <i class="fas fa-spa"></i>
+                    <h3>Spa Services</h3>
+                    <p>Relaxing treatments and massages</p>
+                </div>
+                <div class="amenity-item">
+                    <i class="fas fa-dumbbell"></i>
+                    <h3>Fitness Center</h3>
+                    <p>State-of-the-art gym equipment</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery" id="gallery">
+            <h2>Photo Gallery</h2>
+            <div class="gallery-grid">
+                <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Hotel Lobby">
+                <img src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1632&q=80" alt="Restaurant">
+                <img src="https://images.unsplash.com/photo-1534258936925-c58bed479fcb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1631&q=80" alt="Beach View">
+                <img src="https://images.unsplash.com/photo-1539667468225-eebb663053e6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1614&q=80" alt="Pool Area">
+            </div>
+        </section>
+
+        <footer class="home-footer" id="contact">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Ethiopia ,Hawassa</p>
+                    <p><i class="fas fa-phone"></i> 0914635478</p>
+                    <p><i class="fas fa-envelope"></i> info@haileresort.com</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#homepage">Home</a></li>
+                        <li><a href="#rooms">Rooms</a></li>
+                        <li><a href="#amenities">Amenities</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-tripadvisor"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2018 Haile Resort. All Rights Reserved.</p>
+            </div>
+        </footer>
+    </section>
+
+    <!-- Admin Dashboard (hidden by default) -->
+    <div class="container" id="admin-dashboard" style="display:none;">
+        <!-- Previous admin dashboard content goes here -->
+        <!-- Enhanced sections for billing, rooms, reports, and staff -->
+        
+        <!-- Enhanced Billing Section -->
+        <section class="content-section" id="billing">
+            <div class="section-header">
+                <h2><i class="fas fa-receipt"></i> Billing & Invoices</h2>
+                <button class="btn-primary" id="new-invoice-btn">
+                    <i class="fas fa-plus"></i> New Invoice
+                </button>
+            </div>
+            
+            <div class="billing-stats">
+                <div class="stat-card">
+                    <i class="fas fa-dollar-sign"></i>
+                    <h3>Today's Revenue</h3>
+                    <p class="stat-value">$8,450</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-file-invoice-dollar"></i>
+                    <h3>Pending Invoices</h3>
+                    <p class="stat-value">12</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-money-bill-wave"></i>
+                    <h3>Monthly Revenue</h3>
+                    <p class="stat-value">$142,300</p>
+                </div>
+            </div>
+            
+            <div class="table-container">
+                <table id="invoices-table">
+                    <thead>
+                        <tr>
+                            <th>Invoice #</th>
+                            <th>Guest Name</th>
+                            <th>Room</th>
+                            <th>Amount</th>
+                            <th>Status</th>
+                            <th>Due Date</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>INV-1001</td>
+                            <td>Michael Johnson</td>
+                            <td>Deluxe Suite</td>
+                            <td>$1,250</td>
+                            <td><span class="status-badge paid">Paid</span></td>
+                            <td>Jul 15, 2023</td>
+                            <td>
+                                <button class="table-btn view"><i class="fas fa-eye"></i></button>
+                                <button class="table-btn print"><i class="fas fa-print"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>INV-1002</td>
+                            <td>Sarah Williams</td>
+                            <td>Ocean View</td>
+                            <td>$980</td>
+                            <td><span class="status-badge pending">Pending</span></td>
+                            <td>Jul 18, 2023</td>
+                            <td>
+                                <button class="table-btn view"><i class="fas fa-eye"></i></button>
+                                <button class="table-btn print"><i class="fas fa-print"></i></button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="payment-methods">
+                <h3><i class="fas fa-credit-card"></i> Payment Methods</h3>
+                <div class="payment-cards">
+                    <div class="payment-card">
+                        <img src="https://cdn-icons-png.flaticon.com/512/196/196578.png" alt="Visa">
+                        <p>Visa</p>
+                    </div>
+                    <div class="payment-card">
+                        <img src="https://cdn-icons-png.flaticon.com/512/196/196561.png" alt="Mastercard">
+                        <p>Mastercard</p>
+                    </div>
+                    <div class="payment-card">
+                        <img src="https://cdn-icons-png.flaticon.com/512/888/888870.png" alt="PayPal">
+                        <p>PayPal</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Enhanced Rooms Section -->
+        <section class="content-section" id="rooms">
+            <div class="section-header">
+                <h2><i class="fas fa-bed"></i> Room Management</h2>
+                <button class="btn-primary" id="add-room-btn">
+                    <i class="fas fa-plus"></i> Add Room
+                </button>
+            </div>
+            
+            <div class="room-status-container">
+                <div class="room-floor">
+                    <h3><i class="fas fa-building"></i> Floor 1</h3>
+                    <div class="room-grid">
+                        <div class="room-status available">
+                            <span>101</span>
+                            <p>Standard</p>
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <div class="room-status occupied">
+                            <span>102</span>
+                            <p>Standard</p>
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="room-status maintenance">
+                            <span>103</span>
+                            <p>Deluxe</p>
+                            <i class="fas fa-tools"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="room-floor">
+                    <h3><i class="fas fa-building"></i> Floor 2</h3>
+                    <div class="room-grid">
+                        <div class="room-status available">
+                            <span>201</span>
+                            <p>Deluxe</p>
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <div class="room-status available">
+                            <span>202</span>
+                            <p>Deluxe</p>
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <div class="room-status reserved">
+                            <span>203</span>
+                            <p>Suite</p>
+                            <i class="fas fa-calendar-check"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="housekeeping">
+                <h3><i class="fas fa-broom"></i> Housekeeping Status</h3>
+                <div class="housekeeping-grid">
+                    <div class="hk-card">
+                        <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Room Cleaning">
+                        <div class="hk-info">
+                            <h4>Room 102</h4>
+                            <p>Status: <span class="status-pending">Pending</span></p>
+                            <p>Assigned to: Maria G.</p>
+                        </div>
+                    </div>
+                    <div class="hk-card">
+                        <img src="https://images.unsplash.com/photo-1583845112203-29329902330b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Room Cleaning">
+                        <div class="hk-info">
+                            <h4>Room 201</h4>
+                            <p>Status: <span class="status-completed">Completed</span></p>
+                            <p>Assigned to: John D.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Enhanced Reports Section -->
+        <section class="content-section" id="reports">
+            <h2><i class="fas fa-chart-bar"></i> Reports & Analytics</h2>
+            
+            <div class="report-filters">
+                <div class="filter-group">
+                    <label for="report-type">Report Type:</label>
+                    <select id="report-type">
+                        <option value="occupancy">Occupancy Report</option>
+                        <option value="revenue">Revenue Report</option>
+                        <option value="guest">Guest Report</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="report-period">Period:</label>
+                    <select id="report-period">
+                        <option value="daily">Daily</option>
+                        <option value="weekly">Weekly</option>
+                        <option value="monthly">Monthly</option>
+                    </select>
+                </div>
+                <button class="btn-primary">
+                    <i class="fas fa-download"></i> Export Report
+                </button>
+            </div>
+            
+            <div class="report-charts">
+                <div class="chart-container">
+                    <h3>Monthly Occupancy Rate</h3>
+                    <canvas id="monthlyOccupancyChart"></canvas>
+                </div>
+                <div class="chart-container">
+                    <h3>Revenue Sources</h3>
+                    <canvas id="revenueSourcesChart"></canvas>
+                </div>
+            </div>
+            
+            <div class="report-data">
+                <h3><i class="fas fa-table"></i> Report Data</h3>
+                <div class="table-container">
+                    <table id="report-table">
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Occupancy</th>
+                                <th>Revenue</th>
+                                <th>ADR</th>
+                                <th>RevPAR</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Jul 1, 2023</td>
+                                <td>78%</td>
+                                <td>$8,450</td>
+                                <td>$145</td>
+                                <td>$113</td>
+                            </tr>
+                            <tr>
+                                <td>Jul 2, 2023</td>
+                                <td>82%</td>
+                                <td>$9,120</td>
+                                <td>$150</td>
+                                <td>$123</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Enhanced Staff Section -->
+        <section class="content-section" id="staff">
+            <div class="section-header">
+                <h2><i class="fas fa-user-tie"></i> Staff Management</h2>
+                <button class="btn-primary" id="add-staff-btn">
+                    <i class="fas fa-plus"></i> Add Staff
+                </button>
+            </div>
+            
+            <div class="staff-stats">
+                <div class="stat-card">
+                    <i class="fas fa-users"></i>
+                    <h3>Total Staff</h3>
+                    <p class="stat-value">42</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-user-clock"></i>
+                    <h3>On Duty</h3>
+                    <p class="stat-value">18</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-calendar-alt"></i>
+                    <h3>On Leave</h3>
+                    <p class="stat-value">4</p>
+                </div>
+            </div>
+            
+            <div class="staff-departments">
+                <h3><i class="fas fa-sitemap"></i> By Department</h3>
+                <div class="dept-cards">
+                    <div class="dept-card">
+                        <img src="https://images.unsplash.com/photo-1551218808-94e220e084d2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="Front Desk">
+                        <h4>Front Desk</h4>
+                        <p>8 Staff Members</p>
+                    </div>
+                    <div class="dept-card">
+                        <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Housekeeping">
+                        <h4>Housekeeping</h4>
+                        <p>22 Staff Members</p>
+                    </div>
+                    <div class="dept-card">
+                        <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Restaurant">
+                        <h4>Restaurant</h4>
+                        <p>12 Staff Members</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="staff-list">
+                <h3><i class="fas fa-list"></i> Staff Directory</h3>
+                <div class="table-container">
+                    <table id="staff-table">
+                        <thead>
+                            <tr>
+                                <th>Photo</th>
+                                <th>Name</th>
+                                <th>Position</th>
+                                <th>Department</th>
+                                <th>Status</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Sarah Johnson" class="staff-photo"></td>
+                                <td>Sarah Johnson</td>
+                                <td>Front Desk Manager</td>
+                                <td>Front Office</td>
+                                <td><span class="status-active">Active</span></td>
+                                <td>
+                                    <button class="table-btn view"><i class="fas fa-eye"></i></button>
+                                    <button class="table-btn edit"><i class="fas fa-edit"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Michael Brown" class="staff-photo"></td>
+                                <td>Michael Brown</td>
+                                <td>Head Housekeeper</td>
+                                <td>Housekeeping</td>
+                                <td><span class="status-active">Active</span></td>
+                                <td>
+                                    <button class="table-btn view"><i class="fas fa-eye"></i></button>
+                                    <button class="table-btn edit"><i class="fas fa-edit"></i></button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
